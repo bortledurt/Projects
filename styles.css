@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+#header-img {
+    max-width: 120px;
+}
+
+#nav-bar {
+    margin-top: 0.5rem;
+}
+
+.nav-link {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 2rem;
+    margin-top: 80px; 
+}
+
+h1, h2 {
+    color: #333;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.video-link {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.video-link:hover {
+    text-decoration: underline;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #333;
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    margin: 0.5rem 0;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    #header {
+        padding: 0.5rem;
+    }
+
+    #header-img {
+        max-width: 100px;
+    }
+
+    .nav-link {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    form {
+        padding: 1rem;
+    }
+
+    form input, form textarea {
+        padding: 0.5rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    #header-img {
+        max-width: 80px;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+    }
+
+    section {
+        padding: 0.5rem;
+    }
+
+    form {
+        padding: 0.5rem;
+    }
+
+    form input, form textarea {
+        padding: 0.4rem;
+    }
+}
+
+
+#about, #features, #contact {
+    margin-bottom: 2rem;
+}
+
+#about {
+    margin-bottom: 1.5rem; 
+}
+
+#features {
+    margin-bottom: 1.5rem;
+}
+
+#contact {
+    margin-bottom: 2rem; 
+}

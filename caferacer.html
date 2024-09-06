@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Racer Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header">
+        <img id="header-img" src="https://e7.pngegg.com/pngimages/142/436/png-clipart-cafe-racer-custom-motorcycle-bmw-bicycle-handlebars-cafe-racer-exhaust-system-text.png" alt="Cafe Racer Logo">
+        <nav id="nav-bar">
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#features">Features</a>
+            <a class="nav-link" href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h1>Welcome to Cafe Racer</h1>
+        <p>Cafe racers are custom motorcycles characterized by their minimalist, retro design. Originating from British motorcycle culture of the 1960s, these bikes are built for speed and agility, reflecting a rebellious spirit and personal style.</p>
+        
+        <h2>History of Cafe Racers</h2>
+        <p>The cafe racer movement began in the post-war UK as young enthusiasts modified their bikes to resemble racing machines. Stripping down bikes to reduce weight, adding performance parts, and creating unique aesthetics were key elements. The culture was tied to the mod and rockers subcultures, with riders racing between cafes, building a distinctive community and style. Today, cafe racers are celebrated for their classic look and connection to motorcycle history.</p>
+        
+        <h2>Learn More</h2>
+        <p>Watch this video to explore the evolution of cafe racers:</p>
+        <a href="https://www.youtube.com/watch?v=OwfKSCiVcaI" target="_blank" class="video-link">The Evolution of Cafe Racers: From the 60s to Today</a>
+    </section>
+
+    <section id="features">
+        <h2>Features</h2>
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/OwfKSCiVcaI" title="The Evolution of Cafe Racers: From the 60s to Today" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
+
+            <label for="suggestions">Suggestions/Thoughts:</label>
+            <textarea id="suggestions" name="suggestions" placeholder="Your Suggestions or Thoughts"></textarea>
+
+            <input type="submit" id="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Cafe Racer</p>
+    </footer>
+</body>
+</html>
