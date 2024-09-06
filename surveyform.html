@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <h1 id="title">📸 Photography Skill Assessment</h1>
+
+    
+    <p id="description">
+        Greetings! We are gathering data regarding about your skills and experience about on photography, photo editing etc. Kindly share us your information by following the guide below.
+    
+    <p>Fill out the following forms below to help us understand your proficiency levels:</p>
+    
+    <form id="survey-form">
+      
+        <label id="name-label" for="name">Name:</label>
+        <input id="name" type="text" placeholder="Enter your name" required>
+        
+        
+        <label id="email-label" for="email">Email:</label>
+        <input id="email" type="email" placeholder="Enter your email" required>
+        
+     
+        <label id="number-label" for="number">Age:</label>
+        <input id="number" type="number" placeholder="Enter your age" min="18" max="99" required>
+       
+        <label for="dropdown">Select your current skill level:</label>
+        <select id="dropdown" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="beginner">Beginner</option>
+            <option value="moderate">Moderate</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="expert">Expert</option>
+        </select>
+
+    
+        <label for="comments">Please describe your experience:</label>
+        <textarea id="comments" placeholder="Tell us about your work and experience in photography" rows="4"></textarea>
+        
+
+        <p>How did you hear about us?</p>
+        <div class="radio-group">
+            <label>
+                <input type="radio" name="referral" value="friends" required> Friends
+            </label>
+            <label>
+                <input type="radio" name="referral" value="advertisement"> Ads
+            </label>
+            <label>
+                <input type="radio" name="referral" value="social-media"> Social Media
+            </label>
+            <label>
+                <input type="radio" name="referral" value="others"> Others
+            </label>
+        </div>
+        
+        <p>What do you wish to learn more about? (Select all that apply):</p>
+        <label>
+            <input type="checkbox" name="learning" value="video-editing"> Video Editing & Rendering
+        </label>
+        <label>
+            <input type="checkbox" name="learning" value="animation"> Animation
+        </label>
+        <label>
+            <input type="checkbox" name="learning" value="sound-fx"> Sound FX
+        </label>
+        
+       
+        <label for="additional-comments">Additional comments:</label>
+        <textarea id="additional-comments" placeholder="Share your thoughts with us" rows="4"></textarea>
+       
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</body>
+</html>
